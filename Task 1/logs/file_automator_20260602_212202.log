@@ -1,0 +1,12 @@
+2026-06-02 21:22:02,092 | INFO     | Log file created: logs\file_automator_20260602_212202.log
+2026-06-02 21:22:02,092 | INFO     | ==================================================
+2026-06-02 21:22:02,092 | INFO     | File Automator started.
+2026-06-02 21:22:02,092 | INFO     | ==================================================
+2026-06-02 21:22:44,367 | DEBUG    | User input -> '1'
+2026-06-02 21:23:10,796 | DEBUG    | User input -> '"C:\\Users\\Mepaayush\\AppData\\Local\\Packages\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\\LocalState\\sessions\\76EDC9BD6F78D862CD76F041032245AAACBECE01\\transfers\\2026-22\\PhantomWall_Premium.pptx"'
+2026-06-02 21:23:29,350 | DEBUG    | User input -> 'Hackathon PPT'
+2026-06-02 21:23:38,252 | DEBUG    | User input -> 'CODE DEN'
+2026-06-02 21:23:38,253 | INFO     | [RENAME] Directory: "C:\Users\Mepaayush\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\76EDC9BD6F78D862CD76F041032245AAACBECE01\transfers\2026-22\PhantomWall_Premium.pptx" | 'Hackathon PPT' -> 'CODE DEN'
+2026-06-02 21:23:38,253 | ERROR    | Path does not exist: "C:\Users\Mepaayush\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\76EDC9BD6F78D862CD76F041032245AAACBECE01\transfers\2026-22\PhantomWall_Premium.pptx"
+2026-06-02 21:23:49,355 | DEBUG    | User input -> '5'
+2026-06-02 21:23:49,355 | INFO     | File Automator exited by user.

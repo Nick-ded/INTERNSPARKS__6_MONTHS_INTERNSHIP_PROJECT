@@ -1,0 +1,14 @@
+2026-06-02 21:34:32,202 | INFO     | Log file created: logs\file_automator_20260602_213432.log
+2026-06-02 21:34:32,202 | INFO     | ==================================================
+2026-06-02 21:34:32,202 | INFO     | File Automator started.
+2026-06-02 21:34:32,202 | INFO     | ==================================================
+2026-06-02 21:34:36,423 | DEBUG    | User input -> '1'
+2026-06-02 21:34:56,367 | DEBUG    | User input -> 'C:\\Users\\Mepaayush\\Downloads\\PhantomWall_Premium (1).pptx'
+2026-06-02 21:35:11,052 | DEBUG    | User input -> 'Hack the den'
+2026-06-02 21:35:14,644 | DEBUG    | User input -> 'Meow'
+2026-06-02 21:35:14,644 | INFO     | [RENAME] Directory: C:\Users\Mepaayush\Downloads\PhantomWall_Premium (1).pptx | 'Hack the den' -> 'Meow'
+2026-06-02 21:35:14,644 | ERROR    | A file was given instead of a directory: C:\Users\Mepaayush\Downloads\PhantomWall_Premium (1).pptx
+2026-06-02 21:35:41,990 | DEBUG    | User input -> '1'
+2026-06-02 21:35:43,405 | DEBUG    | User input -> 'PhantomWall'
+2026-06-02 21:35:48,004 | DEBUG    | User input -> 'Meow'
+2026-06-02 21:35:58,074 | WARNING  | User interrupted input.

@@ -1,0 +1,163 @@
+========================================================
+  FILE AUTOMATOR — Sample Input / Output
+========================================================
+
+────────────────────────────────────────────────────────
+  OPERATION 1: Rename Files
+────────────────────────────────────────────────────────
+
+INPUT:
+  Choice       : 1
+  Directory    : C:\Users\user\Documents\reports
+  Find text    : draft
+  Replace with : final
+
+Before rename:
+  report_draft_jan.docx
+  report_draft_feb.docx
+  summary.docx            ← no match, untouched
+
+CONSOLE OUTPUT:
+  INFO     | Log file created: logs/file_automator_20240601_143012.log
+  INFO     | [RENAME] Directory: C:\Users\user\Documents\reports | 'draft' -> 'final'
+  INFO     |   Renamed: report_draft_jan.docx  ->  report_final_jan.docx
+  INFO     |   Renamed: report_draft_feb.docx  ->  report_final_feb.docx
+  INFO     | [RENAME] Done - 2 file(s) renamed.
+
+  2 file(s) renamed.
+
+After rename:
+  report_final_jan.docx
+  report_final_feb.docx
+  summary.docx
+
+
+────────────────────────────────────────────────────────
+  OPERATION 2: Sort Files by Extension
+────────────────────────────────────────────────────────
+
+INPUT:
+  Choice    : 2
+  Directory : C:\Users\user\Downloads
+
+Before sort:
+  invoice.pdf
+  photo.jpg
+  budget.xlsx
+  notes.txt
+  logo.png
+  data.csv
+
+CONSOLE OUTPUT:
+  INFO     | [SORT] Directory: C:\Users\user\Downloads
+  INFO     |   Moved: invoice.pdf   ->  PDF/
+  INFO     |   Moved: photo.jpg     ->  JPG/
+  INFO     |   Moved: budget.xlsx   ->  XLSX/
+  INFO     |   Moved: notes.txt     ->  TXT/
+  INFO     |   Moved: logo.png      ->  PNG/
+  INFO     |   Moved: data.csv      ->  CSV/
+  INFO     | [SORT] Done - 6 file(s) sorted into 6 folder(s).
+
+  Sort summary:
+    CSV/   ->  1 file(s)
+    JPG/   ->  1 file(s)
+    PDF/   ->  1 file(s)
+    PNG/   ->  1 file(s)
+    TXT/   ->  1 file(s)
+    XLSX/  ->  1 file(s)
+
+After sort (directory tree):
+  Downloads/
+    CSV/
+      data.csv
+    JPG/
+      photo.jpg
+    PDF/
+      invoice.pdf
+    PNG/
+      logo.png
+    TXT/
+      notes.txt
+    XLSX/
+      budget.xlsx
+
+
+────────────────────────────────────────────────────────
+  OPERATION 3: Clean Directory
+────────────────────────────────────────────────────────
+
+INPUT:
+  Choice     : 3
+  Directory  : C:\Users\user\Temp
+  Extensions : tmp,log,bak
+  Confirm    : yes
+
+Before clean:
+  app.log
+  session.tmp
+  config.bak
+  important.txt   ← not matched, kept
+
+CONSOLE OUTPUT:
+  INFO     | [CLEAN] Directory: C:\Users\user\Temp | Target extensions: ['.tmp', '.log', '.bak']
+  INFO     |   Deleted: app.log
+  INFO     |   Deleted: session.tmp
+  INFO     |   Deleted: config.bak
+  INFO     | [CLEAN] Done - 3 file(s) deleted.
+
+  3 file(s) deleted.
+
+After clean:
+  important.txt
+
+
+────────────────────────────────────────────────────────
+  OPERATION 4: List Directory Tree
+────────────────────────────────────────────────────────
+
+INPUT:
+  Choice    : 4
+  Directory : C:\Users\user\Project
+
+CONSOLE OUTPUT:
+  ────────────────────────────────────────────────────
+  Directory tree: C:\Users\user\Project
+  ────────────────────────────────────────────────────
+  [DIR]  Project/
+      [FILE] README.md  (1024 bytes)
+      [FILE] main.py    (4096 bytes)
+      [DIR]  src/
+          [FILE] utils.py   (2048 bytes)
+          [FILE] config.py  (512 bytes)
+      [DIR]  tests/
+          [FILE] test_main.py  (3072 bytes)
+  ────────────────────────────────────────────────────
+
+
+────────────────────────────────────────────────────────
+  OPERATION 5: Exit
+────────────────────────────────────────────────────────
+
+INPUT:
+  Choice : 5
+
+CONSOLE OUTPUT:
+  Goodbye!
+
+
+────────────────────────────────────────────────────────
+  ERROR HANDLING EXAMPLES
+────────────────────────────────────────────────────────
+
+Scenario: Directory does not exist
+  ERROR    | Path does not exist: C:\Users\user\ghost_folder
+
+Scenario: Permission denied
+  ERROR    | Permission denied during rename: [Errno 13] Permission denied: 'locked.txt'
+
+Scenario: Rename cancelled (wrong confirm)
+  WARNING  | Clean cancelled by user.
+
+Scenario: Invalid menu choice
+  WARNING  | Invalid menu choice entered: '9'
+========================================================
