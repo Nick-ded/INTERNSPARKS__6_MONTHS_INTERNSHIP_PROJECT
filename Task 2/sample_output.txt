@@ -1,0 +1,192 @@
+========================================================================
+  API DATA FETCHER - Sample Output
+========================================================================
+
+──────────────────────────────────────────────────────────────────────
+  EXAMPLE 1: GitHub Trending Repositories (with search)
+──────────────────────────────────────────────────────────────────────
+
+Welcome to API Data Fetcher!
+Fetch, parse, search, and display API data with ease.
+
+======================================================================
+                      API DATA FETCHER
+======================================================================
+
+Select an API to fetch data from:
+
+  1. GitHub Trending
+     Fetch trending GitHub repositories
+
+  2. RandomUser API
+     Generate random user profiles
+
+  3. REST Countries
+     Get information about all countries
+
+  4. Open Trivia DB
+     Fetch trivia questions
+
+  5. JSONPlaceholder Posts
+     Sample blog posts (testing API)
+
+  0. Exit
+
+Enter your choice (0-5): 1
+
+ℹ Fetching data from: GitHub Trending
+ℹ URL: https://api.github.com/search/repositories
+✓ Data fetched successfully! Status: 200
+
+Enter search term (or press Enter to show all): python
+
+ℹ Searching for: 'python'
+✓ Found 12 matching repositories
+
+======================================================================
+                  Results from GitHub Trending
+======================================================================
+
+Found 12 repositories:
+
+[1] tensorflow
+    Owner: tensorflow
+    ⭐ Stars: 185,432
+    🍴 Forks: 74,123
+    Language: Python
+    URL: https://github.com/tensorflow/tensorflow
+    Description: An Open Source Machine Learning Framework for Everyone...
+
+[2] keras
+    Owner: keras-team
+    ⭐ Stars: 61,234
+    🍴 Forks: 19,421
+    Language: Python
+    URL: https://github.com/keras-team/keras
+    Description: Deep Learning for humans...
+
+[3] flask
+    Owner: pallets
+    ⭐ Stars: 67,123
+    🍴 Forks: 16,234
+    Language: Python
+    URL: https://github.com/pallets/flask
+    Description: The Python micro framework for building web applications...
+
+[4] django
+    Owner: django
+    ⭐ Stars: 78,234
+    🍴 Forks: 31,234
+    Language: Python
+    URL: https://github.com/django/django
+    Description: The Web framework for perfectionists with deadlines...
+
+
+──────────────────────────────────────────────────────────────────────
+  EXAMPLE 2: RandomUser API (no search)
+──────────────────────────────────────────────────────────────────────
+
+Enter your choice (0-5): 2
+
+ℹ Fetching data from: RandomUser API
+ℹ URL: https://randomuser.me/api/
+✓ Data fetched successfully! Status: 200
+
+Enter search term (or press Enter to show all): 
+
+======================================================================
+                  Results from RandomUser API
+======================================================================
+
+Generated 20 users:
+
+[1] John Smith
+    Email: john.smith@example.com
+    Gender: Male
+    Location: Austin, United States
+    Phone: (555) 234-5678
+    Age: 29
+
+[2] Emma Johnson
+    Email: emma.johnson@example.com
+    Gender: Female
+    Location: Sydney, Australia
+    Phone: 04-1234-5678
+    Age: 34
+
+[3] Oliver Brown
+    Email: oliver.brown@example.com
+    Gender: Male
+    Location: London, United Kingdom
+    Phone: 015394 12345
+    Age: 42
+
+
+──────────────────────────────────────────────────────────────────────
+  EXAMPLE 3: REST Countries (with search)
+──────────────────────────────────────────────────────────────────────
+
+Enter your choice (0-5): 3
+
+ℹ Fetching data from: REST Countries
+ℹ URL: https://restcountries.com/v3.1/all
+✓ Data fetched successfully! Status: 200
+
+Enter search term (or press Enter to show all): asia
+
+ℹ Searching for: 'asia'
+✓ Found 48 matching countries
+
+======================================================================
+                    Results from REST Countries
+======================================================================
+
+Found 48 countries:
+
+[1] India
+    Capital: New Delhi
+    Region: Asia
+    Population: 1,380,004,385
+    Area: 3,287,590 km²
+    Languages: Hindi, English
+
+[2] China
+    Capital: Beijing
+    Region: Asia
+    Population: 1,402,112,000
+    Area: 9,596,961 km²
+    Languages: Chinese
+
+[3] Japan
+    Capital: Tokyo
+    Region: Asia
+    Population: 125,836,021
+    Area: 377,930 km²
+    Languages: Japanese
+
+[4] Thailand
+    Capital: Bangkok
+    Region: Asia
+    Population: 69,799,978
+    Area: 513,120 km²
+    Languages: Thai
+
+
+──────────────────────────────────────────────────────────────────────
+  EXAMPLE 4: Error Handling (Invalid API choice)
+──────────────────────────────────────────────────────────────────────
+
+Enter your choice (0-5): 9
+
+✗ Invalid choice. Please try again.
+
+
+──────────────────────────────────────────────────────────────────────
+  EXAMPLE 5: Exit
+──────────────────────────────────────────────────────────────────────
+
+Enter your choice (0-5): 0
+
+✓ Goodbye!
+
+========================================================================
